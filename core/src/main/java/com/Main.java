@@ -14,7 +14,6 @@ public class Main extends Application{
     private Parent root;
     @Override
     public void start(Stage primaryStage) throws Exception{
-        final FXMLLoader guiLoader = new FXMLLoader(getClass().getResource("CoursePickerGUI.fxml"));
     }
     public static void main(String[] args) {
         launch(args);

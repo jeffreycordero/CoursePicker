@@ -2,7 +2,6 @@ package com.coursepickerweb.server;
 
 import static spark.Spark.*;
 import com.coursepicker.courseplanner.*;
-import com.coursepicker.courseplanner.schedulemaker.*;
 import com.coursepickerweb.utils.JSONConverter;
 import java.util.*;
 
@@ -31,7 +30,7 @@ public class WebServer {
 
     private void setupRESTfulRequests() {
         setupGetGradeRequest();
-        setupGetScheduleRequest();
+        //setupGetScheduleRequest();
     }
 
     /**
@@ -59,7 +58,7 @@ public class WebServer {
      * sample request
      * http://localhost:8880/schedule?year=2017&semester=spring&course=CSCE&number=121
      */
-    private void setupGetScheduleRequest() {
+    /*private void setupGetScheduleRequest() {
         get("/schedule", (request, response) -> {
             try {
                 String requestedYear = request.queryParams("year");
@@ -86,5 +85,5 @@ public class WebServer {
                 return e.toString();
             }
         });
-    }
+    }*/
 }
